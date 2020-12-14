@@ -37,34 +37,54 @@
     text-align: left;
 }
 
-/* Style the top navigation bar */
-.topnav {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    background-color: lightblue;
+
+}
+/* Style the top navigation bar */
+li {
+    float: right;
 }
 
-/*navbar links */
-.topnav a {
-    float: right;
-    display: block;
-    color:rgb(50, 56, 63);
+li a, .dropbtn {
+    display:inline-block;
+    color: darkslategray;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;    
 }
 
-/* Change color on hover */
-.topnav a:hover {
+li a:hover:not(.label), .dropdown:hover,.dropbtn {
     background-color: #ddd;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: slategrey;
+    min-width:auto  
+}
+
+.dropdown-list a {
     color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
 }
 
 /*nav bar title */
-#topnav b {
-    float: left;    
+.label {    
     color: white;
-    background-color: lightblue;
+    background-color: teal;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* h2 heading*/
@@ -95,18 +115,15 @@ p {
 
 }
 
-
-
-
  /* Create two columns that floats next to each other */
- .column1 {
+ .column {
     float: left;
-    width: 56%;
+    width: 50%;
 }
   
-.column2 {
+.column.right {
     float: left;
-    width: 44%;
+    width: 50%;
 }
 
  /* Clear floats after the columns */
@@ -121,21 +138,4 @@ p {
     .column {
     width: 100%;
     }
-}
-
-
-.nestedlinks {
-    border: 5px solid #000;
-    display: inline-block;
-    position: relative;
-    width: 500px;
-    height: 300px;
-    cursor: pointer;
-
-}
-
-.menu_subitem {
-    list-style-type: none;
-    margin:0;
-    padding: 0;
 }
