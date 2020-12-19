@@ -1,141 +1,69 @@
-.border1 {
-    outline-style: none;
-    padding: 50px;
-    margin: 20px;
+body {
+    background-color: rgb(229, 226, 226);
 }
 
-.border2 {
-    outline-style: none;
-    padding: 50px;
-    margin: 20px;
 
-}
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.left {
-    left: 0;
-  }
-  
-  .right {
-    right: 0;
-  }
-
-  /*h1 heading */
-.h1heading {
-    color:teal;
-    font-size: 40px;
-    color: teal;
-    padding: 20px;
-    text-align: left;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-}
-/* Style the top navigation bar */
-li {
+.navbar-links{
     float: right;
 }
 
-li a, .dropbtn {
-    display:inline-block;
-    color: darkslategray;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;    
-}
-
-li a:hover:not(.label), .dropdown:hover,.dropbtn {
-    background-color: #ddd;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-list {
-    display: none;
-    position: absolute;
-    background-color: slategrey;
-    min-width:auto  
-}
-
-.dropdown-list a {
-    color: black;
-    padding: 12px 16px;
-    display: block;
-    text-align: left;
-}
-
-/*nav bar title */
-.label {    
-    color: white;
-    background-color: teal;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-}
-
-/* h2 heading*/
-.h2heading {
-    text-indent:2%;
-    color: teal;
-}
-
-/*paragraph*/
-p {
-    padding: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gray;
-    font-size:16px;
-    /*background-color: whitesmoke;*/
-    margin-right: 150px;
+.viz-info {
+    background-color: white;
+    padding: 16px;
     text-align: justify;
-    margin-left: 3%
 }
 
-/*front page picture*/
-.textwrap {
-    width:30%;
-    max-width: 50%;
-    height: 100%;
-    padding: 5px;
+.navbar-brand {
+    background-color: teal;
+    padding: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+}
+
+#content-container {
+    margin-top: 32px;
+    visibility: visible;
+}
+
+h1 {
+    color:teal;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.summary-image {
+    width: 200px;
     float: left;
 
 }
 
- /* Create two columns that floats next to each other */
- .column {
-    float: left;
-    width: 50%;
-}
-  
-.column.right {
-    float: left;
-    width: 50%;
+.small-image {
+    width: 150px;
 }
 
- /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.medium-image {
+    width: 550px;
+    
+    display: block;
+
 }
-  
- /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
- @media screen and (max-width: 600px) {
-    .column {
-    width: 100%;
-    }
+
+.smallmed-image {
+    width: 230px;
+    height: auto;
+    margin-left: 2px;
+    margin-right: auto;
+    display: block;
+}
+
+#data-table-container {
+    background-color: white;
+    margin-top: 32px;
+}
+
+#graphs-container {
+    margin-top: 32px;
+    background-color: white;
+    
 }

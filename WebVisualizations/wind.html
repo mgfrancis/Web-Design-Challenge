@@ -19,12 +19,12 @@
     </head>
     <body>
 
-        <div class="container"> <!--start of container1-->
+        <div class="container" style='width: 100%';> <!--start of container1-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white"> <!--start of navbar-->
                 <div class="container"><!--start of Navbar container div-->
                     <div class="row" style='width: 100%'><!--start of navbar container row-->
                         <div class='col-md-3'><!--start of navbar title column-->
-                            <a class="navbar-brand" href="#" style="color: white";>Latitude</a>
+                            <a class="navbar-brand" href="index.html" style="color: white";>Latitude</a>
                         </div><!--end of navbar title column-->
                         <div class='col-md-9 navbar-links'>   <!--start of Navbar Links column-->
                             <div class="collapse navbar-collapse" id="navbarSupportedContent" style= 'float: right';>
@@ -59,35 +59,22 @@
 
         </div><!--end of container1-->
 
+        
+
         <div class="container" id='content-container'>  <!--start of Content container2-->
             <div class="row"><!--start of content row-->
-                <div class='col-md-7'><!--start of summary column-->
+                <div class='col-md-12'><!--start of summary column-->
                     <article class='viz-info'>
-                        <h1>Summary: Latitude vs. X</h1>
+                        <h1>Analysis of Latitude vs. WindSpeed</h1>
                         <hr/>
-                        <img src="Resources/assets/images/Fig1.png" class='summary-image'>
-                        <p>The purpose of this project is to analyze how weather changes as we get closer to the equator.  To accomplish this, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p> 
-                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included:  temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p> 
+                        <img src="Resources/assets/images/Fig4.png" class='medium-image'>
+                        <p>Latitude pertains to angles ranging from zero degrees at the equator to 90 degrees up to the North or down to the South poles of the earth.  Cloudiness refers to cloud cover, which is intensively studied due to its role in the greenhouse effect.  </p> 
+                        <p>Variations in wind speed are more stable around the equator due to the constancy in its heat temperature.  On the other hand, variability is greatest in regions that undergo seasonal changes as it transitions from summer to winter and vice versa.  We can see this in the scatter plot.</p> 
                     </article>
 
-                </div><!--end of summary column-->
-                <div class='col-md-5'><!--start of visualization column-->
-                    <div class="container viz-info">
-                        <h2>Visualizations</h2>
-                        <hr/>
-                        <div class='row'>
-                            <div class='col-md-6'>
-                                <img src="Resources/assets/images/Fig1.png" class='small-image'>
-                                <img src="Resources/assets/images/Fig2.png" class='small-image'>
-                            </div>
-                            <div class='col-md-6'>    
-                                <img src="Resources/assets/images/Fig3.png" class='small-image'>
-                                <img src="Resources/assets/images/Fig4.png" class='small-image'>
-                            </div>
-                        </div>
                         
-                    </div>
-                </div><!--end of visualization column-->
+                    </article>
+                </div><!--end of comparisons container column-->
             </div><!--end of content row-->
 
 
@@ -100,5 +87,7 @@
 
 
         </div> <!--End of Page container1-->
+
     </body>
+
 </html>
